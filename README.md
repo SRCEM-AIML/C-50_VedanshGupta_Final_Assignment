@@ -1,18 +1,16 @@
-## 🚀 Features
-
-### 🧩 Part 1: Flask Application
+###  Part 1: Flask Application
 
 - Displays "Hello, World!" on the homepage
 - Second route accepts user name and age via a form and returns a personalized greeting
 - Basic error handling for invalid inputs
 
-### 🧩 Part 2: Django Application
+###  Part 2: Django Application
 
 - Homepage displays a list of tasks from a database
 - Admin panel allows creation, modification, and deletion of tasks
 - Form on homepage to add new tasks dynamically
 
-### 🐳 Part 3: Docker Compose Setup
+###  Part 3: Docker Compose Setup
 
 - Flask and Django apps are containerized using Docker
 - Docker Compose used to manage both containers
@@ -30,7 +28,7 @@
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 project-root/
@@ -49,7 +47,7 @@ project-root/
 └── docker-compose.yml
 ```
 
-## ▶️ How to Run the Project
+## ▶ How to Run the Project
 
 ### Step 1: Install Docker and Docker Compose
 Make sure Docker is installed on your system. You can verify by running:
@@ -83,7 +81,7 @@ This command will:
 
 ---
 
-## 🔐 Django Admin Credentials
+##  Django Admin Credentials
 
 - **Username:** `admin`
 - **Email:** `admin@example.com`
@@ -93,7 +91,7 @@ This command will:
 
 ## 📤 Deployment & Submission
 
-- ✅ Project pushed to **GitHub**
-- ✅ Docker images built and can be pushed to **Docker Hub**
-- ✅ `assignment3_results` sheet contains GitHub and Docker Hub URLs
+-  Project pushed to **GitHub**
+-  Docker images built and can be pushed to **Docker Hub**
+- `assignment3_results` sheet contains GitHub and Docker Hub URLs
 
