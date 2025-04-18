@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .task {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            margin-top: 30px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task List</h1>
+
+    {% for task in tasks %}
+        <div class="task">
+            <h3>{{ task.title }}</h3>
+            <p>{{ task.description }}</p>
+        </div>
+    {% empty %}
+        <p>No tasks available.</p>
+    {% endfor %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Task">
+    </form>
+</body>
+</html>

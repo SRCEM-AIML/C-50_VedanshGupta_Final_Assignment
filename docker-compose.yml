@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  flask:
+    build:
+      context: ./flask_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./flask_app:/app
+    networks:
+      - app_network
+
+  django:
+    build:
+      context: ./django_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./django_app:/app
+    networks:
+      - app_network
+    depends_on:
+      - flask
+
+networks:
+  app_network:
+    driver: bridge
