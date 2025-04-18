@@ -89,7 +89,7 @@ This command will:
 
 ---
 
-## 📤 Deployment & Submission
+## 📤 Deployment
 
 -  Project pushed to **GitHub**
 -  Docker images built and can be pushed to **Docker Hub**
